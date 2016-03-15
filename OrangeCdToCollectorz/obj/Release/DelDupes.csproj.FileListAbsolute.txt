@@ -1,8 +1,0 @@
-C:\Users\tsch\Documents\GitHub\DeleteDupes\OrangeCdToCollectorz\bin\Release\DelDupes.exe.config
-C:\Users\tsch\Documents\GitHub\DeleteDupes\OrangeCdToCollectorz\bin\Release\DelDupes.exe
-C:\Users\tsch\Documents\GitHub\DeleteDupes\OrangeCdToCollectorz\bin\Release\DelDupes.pdb
-C:\Users\tsch\Documents\GitHub\DeleteDupes\OrangeCdToCollectorz\obj\Release\DelDupes.Form1.resources
-C:\Users\tsch\Documents\GitHub\DeleteDupes\OrangeCdToCollectorz\obj\Release\DelDupes.Properties.Resources.resources
-C:\Users\tsch\Documents\GitHub\DeleteDupes\OrangeCdToCollectorz\obj\Release\DelDupes.csproj.GenerateResource.Cache
-C:\Users\tsch\Documents\GitHub\DeleteDupes\OrangeCdToCollectorz\obj\Release\DelDupes.exe
-C:\Users\tsch\Documents\GitHub\DeleteDupes\OrangeCdToCollectorz\obj\Release\DelDupes.pdb
