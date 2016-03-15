@@ -116,13 +116,13 @@ namespace DelDupes
                 string.Format(
                   "Found file {0} with same size of {1} as file {2}",
                   file,
-                  length.ToString(),
+                  length.ToString(CultureInfo.InvariantCulture),
                   fileInfoTarget.Name));
               this.SetText(this.richTextBox1, Environment.NewLine);
 
               if (this.checkBoxDoIt.Checked == true)
               {
-                File.Delete(path);
+                File.Delete(file);
                 this.SetText(this.richTextBox1, "DELETED: " + file + Environment.NewLine);
               }
             }
