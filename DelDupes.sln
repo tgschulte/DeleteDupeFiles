@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelDupes", "OrangeCdToCollectorz\DelDupes.csproj", "{29948F47-ADBE-44DA-AD87-48155FAF4A0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelDupes", "DelDupes\DelDupes.csproj", "{29948F47-ADBE-44DA-AD87-48155FAF4A0C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{95699782-3B1A-4AF2-82D6-5D7896AC339E}"
 EndProject
