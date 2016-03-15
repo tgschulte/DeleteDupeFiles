@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace DelDupes
   {
     string _lastPoprerty = string.Empty;
     string _selectedPath = string.Empty;
-
+    int _cnt = 0;
 
     // This delegate enables asynchronous calls for setting  
     // the text property on a TextBox control.  
@@ -108,6 +109,7 @@ namespace DelDupes
             FileInfo fileInfoTarget = new FileInfo(path);
             if (fileInfoTarget.Length == length)
             {
+              _cnt++;
               this.SetText(this.richTextBox1, Environment.NewLine);
               this.SetText(
                 this.richTextBox1,
@@ -147,7 +149,7 @@ namespace DelDupes
       {
         this.SetText(this.richTextBox1, "ERROR: " + ex.Message + Environment.NewLine);
         // listBox1.Items.Add(ex.Message);
-      }
+      }      
     }
 
     private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
@@ -165,6 +167,11 @@ namespace DelDupes
         //double progress = cnt * 100.0 / albumCnt;
         //backgroundWorker.ReportProgress((int)progress);
         DirSearch(this._selectedPath, sender, e);
+        this.SetText(
+                this.richTextBox1,
+                  string.Format(
+                          "Total matches {0}",
+                          _cnt.ToString(CultureInfo.InvariantCulture)));
       }
       catch (System.Exception ex)
       {
